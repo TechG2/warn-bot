@@ -9,7 +9,5 @@ export default class Test extends Command {
     });
   }
 
-  execute(interaction: ChatInputCommandInteraction): void {
-    console.log("interaction");
-  }
+  execute(interaction: ChatInputCommandInteraction): void {}
 }
