@@ -1,4 +1,4 @@
-import { SlashCommandBuilder } from "discord.js";
+import { InteractionResponse, SlashCommandBuilder } from "discord.js";
 import { ICommand } from "../interfaces/ICommand";
 import { ICommandOptions } from "../interfaces/ICommandOptions";
 import { CustomClient } from "./CustomClient";

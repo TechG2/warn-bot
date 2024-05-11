@@ -5,14 +5,9 @@
         "staffRoles": ["1231162303563563049"],
         "headRoles": ["1231161962482765904"]
     },
-    "verify": {
-        "linkedRole": "1231598305587367946",
-        "verifiedRole": "1230565361347203183"
-    },
     "tickets": {
         "categories": [
             {
-                "type": 0,
                 "categoryId": "1231545475690139699",
                 "name": "Segnalazione Bug",
                 "description": "Segnala un bug relativo al sito o al server discord.",
@@ -43,7 +38,6 @@
                 ]
             },
             {
-                "type": 1,
                 "categoryId": "1231544985363677215",
                 "name": "Segnalazione Pagina",
                 "description": "Segnala una pagina che va contro il regolamento.",
@@ -81,7 +75,6 @@
                 ]
             },
             {
-                "type": 2,
                 "categoryId": "1231544954594000977",
                 "name": "Segnalazione Utente",
                 "description": "Segnala un comportamento scorretto eseguito da parte di un utente.",
@@ -119,7 +112,6 @@
                 ]
             },
             {
-                "type": 3,
                 "categoryId": "1230888059709423647",
                 "name": "Altro",
                 "description": "Usa questa opzione se il tuo problema non rientra nelle altre categorie.",

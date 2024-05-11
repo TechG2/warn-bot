@@ -1,6 +1,7 @@
 import { REST, Routes, SlashCommandBuilder } from "discord.js";
 import dotenv from "dotenv";
 import path from "path";
+import { guildId } from "../config/config.json";
 import { getFiles } from "../functions/getFiles";
 import { IHandler } from "../interfaces/IHandler";
 import Command from "./Command";
@@ -32,7 +33,6 @@ export default class Handler implements IHandler {
       });
     });
   }
-
   async loadCommands(): Promise<void> {
     const files = getFiles(path.join(__dirname, "..", "commands"));
     const commands: SlashCommandBuilder[] = [];
@@ -50,10 +50,7 @@ export default class Handler implements IHandler {
 
     try {
       await rest.put(
-        Routes.applicationGuildCommands(
-          process.env.CLIENT_ID!,
-          "1160957400573038632"
-        ),
+        Routes.applicationGuildCommands(process.env.CLIENT_ID!, guildId),
         { body: commands }
       );
     } catch (error) {
